@@ -35,21 +35,22 @@ $ Igdb::Game.find(1971)
 $ Igdb::Game.search(query: 'batman')
 
 ## User Stories
->Be me
->Be on landing page looking for videogame histories and/or info
->When landing page loads, I want to be able to see a login/signup link based on my authentication status
->If I click on Sign Up link, I expect a User Sign Up page to render and provide form to input new user parameters.
->Sign Up form should save user and allow to log in, log out and view user Account Page with newly provided credentials.
->If I click Login link, I expect a User LogIn page to render and provide form to input exisiting user parameters.
->When I successfully login, I expect to have access to User Account Page and be able to favorite videogames.
->As a basic user, I want to be able to view timeline history of videogames separated by console/company.
->As a basic user, I want to be able to view a child element of the console tree, which is used to represent individual
-  videogame titles.
->As a basic user, I want to able to view details about videogame child nodes, such as name, year, genre, title, ratings.
->As a basic user, I want to be able to view details about videogame's child nodes such as characters, expansions, developers,
-  reviews.
->As a logged in user, I want to be able to favorite videogames and add them to wishlist.
->As a logged in user, I want to be able to share for favorites list with other users.
->As a logged in user, I want to be able to share wishlist with other users.
+>
+  - Be me
+  - Be on landing page looking for videogame histories and/or info
+  - When landing page loads, I want to be able to see a login/signup link based on my authentication status
+  - If I click on Sign Up link, I expect a User Sign Up page to render and provide form to input new user parameters.
+  - Sign Up form should save user and allow to log in, log out and view user Account Page with newly provided credentials.
+  - If I click Login link, I expect a User LogIn page to render and provide form to input exisiting user parameters.
+  - When I successfully login, I expect to have access to User Account Page and be able to favorite videogames.
+  - As a basic user, I want to be able to view timeline history of videogames separated by console/company.
+  - As a basic user, I want to be able to view a child element of the console tree, which is used to represent individual
+    videogame titles.
+  - As a basic user, I want to able to view details about videogame child nodes, such as name, year, genre, title, ratings.
+  - As a basic user, I want to be able to view details about videogame's child nodes such as characters, expansions, developers,
+    reviews.
+  - As a logged in user, I want to be able to favorite videogames and add them to wishlist.
+  - As a logged in user, I want to be able to share for favorites list with other users.
+  - As a logged in user, I want to be able to share wishlist with other users.
 
 
