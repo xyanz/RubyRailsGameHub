@@ -27,12 +27,20 @@ requests to the API.
 ## API Info
 
 #### Installation 
+```
 $ gem install igdb_api
+```
 
 #### Usage
+```
 $ Igdb.connect('api_key')
+```
+```
 $ Igdb::Game.find(1971)
+```
+```
 $ Igdb::Game.search(query: 'batman')
+```
 
 ## User Stories
 > - Be on landing page looking for videogame histories and/or info
