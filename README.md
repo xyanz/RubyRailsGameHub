@@ -20,7 +20,7 @@ purchasable on the web.
 - D3
 
 ## WireFrames
-
+![Company Timeline](Company_timeline.png)
 ![3 Pages Wireframe](p4_WF1.jpg)
 
 
