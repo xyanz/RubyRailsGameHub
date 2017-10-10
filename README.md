@@ -8,16 +8,16 @@ favorite video games and create a wishlist. Integrated Amazon API will allow use
 purchasable on the web.
 
 ## Technologies Used
-Rails
-Ruby
-IGDB API
-React
-JS: EJS
-Postgres
-AXIOS
-Ruby gem (igdb_api)
-Semiotics
-D3
+- Rails
+- Ruby
+- IGDB API
+- React
+- JS: EJS
+- Postgres
+- AXIOS
+- Ruby gem (igdb_api)
+- Semiotics
+- D3
 
 ![3 Pages Wireframe](p4_WF1.jpg)
 
