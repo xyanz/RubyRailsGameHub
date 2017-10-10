@@ -35,9 +35,7 @@ $ Igdb::Game.find(1971)
 $ Igdb::Game.search(query: 'batman')
 
 ## User Stories
->
-  - Be me
-  - Be on landing page looking for videogame histories and/or info
+> - Be on landing page looking for videogame histories and/or info
   - When landing page loads, I want to be able to see a login/signup link based on my authentication status
   - If I click on Sign Up link, I expect a User Sign Up page to render and provide form to input new user parameters.
   - Sign Up form should save user and allow to log in, log out and view user Account Page with newly provided credentials.
