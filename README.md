@@ -19,13 +19,10 @@ purchasable on the web.
 - Semiotics
 - D3
 
+## WireFrames
+
 ![3 Pages Wireframe](p4_WF1.jpg)
 
-
-## Possible Problems
-Due to Cross-origin resource sharing restrictions, front-end javascript cannot utilise the API. You will need to 
-create a back-end proxy that will not only shield your API key but also allow you to cache responses and reduce 
-requests to the API.
 
 ## API Info
 
@@ -62,4 +59,7 @@ $ Igdb::Game.search(query: 'batman')
 > - As a logged in user, I want to be able to share for favorites list with other users.
 > - As a logged in user, I want to be able to share wishlist with other users.
 
-
+## Possible Problems
+Due to Cross-origin resource sharing restrictions, front-end javascript cannot utilise the API. You will need to 
+create a back-end proxy that will not only shield your API key but also allow you to cache responses and reduce 
+requests to the API.
