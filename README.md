@@ -19,7 +19,10 @@ Ruby gem (igdb_api)
 Semiotics
 D3
 
-##Possible Problems
+![3 Pages Wireframe](p4_WF1.jpg)
+
+
+## Possible Problems
 Due to Cross-origin resource sharing restrictions, front-end javascript cannot utilise the API. You will need to 
 create a back-end proxy that will not only shield your API key but also allow you to cache responses and reduce 
 requests to the API.
