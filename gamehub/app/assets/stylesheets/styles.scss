@@ -1,0 +1,13 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+body {
+  padding-top: 50px;
+}
+.footer {
+  padding-top: 35px;
+  border-top: 1px solid black;
+  text-align: center;
+}
+.footer span {
+  float: right;
+}
