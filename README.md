@@ -63,3 +63,7 @@ $ Igdb::Game.search(query: 'batman')
 Due to Cross-origin resource sharing restrictions, front-end javascript cannot utilise the API. You will need to 
 create a back-end proxy that will not only shield your API key but also allow you to cache responses and reduce 
 requests to the API.
+
+### Sources 
+https://api.igdb.com/
+https://github.com/tastycake/igdb_api
