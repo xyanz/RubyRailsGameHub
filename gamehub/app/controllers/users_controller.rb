@@ -12,7 +12,6 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome to the Sample App!"
       puts "USER SAVED"
       redirect_to @user
-      #do stuff
     else
       puts "USER DIDNT SAVE"
       render 'new'
