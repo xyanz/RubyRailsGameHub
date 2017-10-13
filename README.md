@@ -22,6 +22,7 @@ purchasable on the web.
 ## WireFrames
 ![Company Timeline](Company_timeline.png)
 ![3 Pages Wireframe](p4_WF1.jpg)
+![Generation Timeline](https://upload.wikimedia.org/wikipedia/en/timeline/5db892aa7d6ae01813f3725528e5053e.png)
 
 
 ## API Info
