@@ -1,1 +1,0 @@
-IGDB_KEY = ENV["IGDB_KEY"]

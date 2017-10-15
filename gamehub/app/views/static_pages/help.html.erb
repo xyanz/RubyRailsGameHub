@@ -1,5 +1,6 @@
 <% provide(:title, "Help") %>
 
 <h1>Help Page</h1>
-<p><%= Rails.application.secrets.inspect %> </p>
+<p><%= Figaro.env.igdb_api_key %> </p>
+
 
