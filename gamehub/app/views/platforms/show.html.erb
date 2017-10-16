@@ -1,1 +1,14 @@
-show.html.erb
+<h3><%= @pr["name"]%><h3>
+<h4>Generation: <%= @pr["generation"] %></h4>
+<p><%= link_to "View Games", games_path(@pr) %>
+<p>CPU: <%= @pr["versions"][0]["cpu"]%>
+<p>Storage: <%= @pr["versions"][0]["storage"]%>
+<p>Memory: <%= @pr["versions"][0]["memory"]%>
+<p>Graphics: <%= @pr["versions"][0]["graphics"]%>
+<p>Sound: <%= @pr["versions"][0]["sound"]%>
+<p>Summary: <%= @pr["versions"][0]["summary"]%></p>
+<p>Games<%= @pr['games']%></p>
+
+
+
+

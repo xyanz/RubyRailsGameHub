@@ -1,6 +1,7 @@
 <% provide(:title, "Home") %>
-<h1>StaticPages#home</h1>
-<h3>Explore a platform</h3>
-<%= link_to "Sign Up", signup_path , class: "btn btn-lg btn-primary" %>
-
+<div class="home-container">
+  <div class="welcome-logo"><h1>Welcome to GAMEHUB</h1></div><br />
+  <h3><%= link_to "Explore a platform", platforms_path %></h3>
+  <%= link_to "Sign Up", signup_path , class: "btn btn-lg btn-primary" %>
+</div>
 

@@ -7,13 +7,13 @@ class StaticPagesController < ApplicationController
 
   def help
     puts "APIII KEYE #{Igdb.connect(Figaro.env.igdb_api_key)}"
-    Igdb.connect(Figaro.env.igdb_api_key)
+    # Igdb.connect(Figaro.env.igdb_api_key)
     # @game = Igdb::Game.all(limit: 10)
   # headers = {"user-key" => Figaro.env.igdb_api_key,
   #   "Accept" => "application/json"
   # }
   # url = 'https://api-2445582011268.apicast.io'
-  url = 'https://api-2445582011268.apicast.io/characters/?fields=*&limit=10'
+  url = 'https://api-2445582011268.apicast.io/platforms/41'
   response = HTTParty.get(url, headers: {"user-key" => Figaro.env.igdb_api_key, "Accept": "application/json"})
   @pr = response.parsed_response
   puts "RESPONSE 111111 #{response}"

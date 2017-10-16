@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   get  '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
-  get '/timelines', to: 'timelines#index'
+  # get '/timelines', to: 'timelines#index'
+  resources :games
   resources :platforms
   # resources :timelines
   resources :users
