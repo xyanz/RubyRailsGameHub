@@ -1,0 +1,146 @@
+// https://davidwalsh.name/css-flip
+// https://css-tricks.com/pure-css-horizontal-scrolling/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+body {
+  padding-top: 50px;
+}
+.footer {
+  padding-top: 35px;
+  border-top: 1px solid black;
+  text-align: center;
+}
+.footer span {
+  float: right;
+}
+.gh-logo {
+  color:white;
+  padding-top: 12px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+input, textarea, select {
+  margin-bottom: 15px;
+  width: 100%;
+}
+////////////////// HORIZONTAL SCROLLING///////////////////////////
+.horizontal-scroll-wrapper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -400px;
+  // width = height
+  width: calc(650px + 1px);
+  // height = width
+  max-height: 2050px;
+  margin: 0;
+  margin-top: 50px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg);
+  transform-origin: right top;
+  transform:rotate(-90deg) translateY(-250px);
+  border: 1px solid black;
+}
+.horizontal-scroll-wrapper > div {
+  border: 1px dotted white;
+  background-color: blue;
+  display: block;
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+.squares {
+  padding: 650px 0 0 0;
+}
+.squares > div {
+  width: 650px;
+  height: 650px;
+  // margin: 10px 0;
+}
+///////////////// END HORIZONTAL SCROLLING //////////////////////////
+.platform-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#platform-item-1{
+  background-image: url(<%= asset_path 'NES1980.jpg' %>);
+}
+#platform-item-2{
+  background-image: url(<%= asset_path 'GameBoy1990.jpg' %>);
+}
+#platform-item-3{
+  background-image: url(<%= asset_path 'SNES1992.jpg' %>);
+}
+#platform-item-4{
+  background-image: url(<%= asset_path 'N64_1997.jpg' %>);
+}
+#platform-item-5{
+  background-image: url(<%= asset_path 'GBColor_1998.jpg' %>);
+}
+#platform-item-6{
+  background-image: url(<%= asset_path 'GBAdvance_2001.jpg' %>);
+}
+#platform-item-7{
+  background-image: url(<%= asset_path 'GameCube_2002.jpg' %>);
+}
+#platform-item-8{
+  background-image: url(<%= asset_path 'NDS_2005.jpg' %>);
+}
+#platform-item-9{
+  background-image: url(<%= asset_path 'Wii_2006.jpg' %>);
+}
+#platform-item-10{
+  background-image: url(<%= asset_path 'N3DS_2011.jpg' %>);
+}
+#platform-item-11{
+  background-image: url(<%= asset_path 'WiiU_2012.jpg' %>);
+}
+
+//////////////////////// IMAGE ROTATE ////////////////////////////////
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000px;
+}
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+.flip-container, .front, .back {
+  width: 650px;
+  height: 650px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  background-color: #1D1A21;
+  transform: rotateY(180deg);
+  color: white;
+  text-align: center;
+}
+
