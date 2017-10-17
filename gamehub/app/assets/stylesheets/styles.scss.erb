@@ -3,6 +3,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 body {
+  // background-image: url(<%= asset_path 'VG_wallpaper.jpg' %>);
   padding-top: 50px;
 }
 .footer {
@@ -26,9 +27,9 @@ input, textarea, select {
 .home-container {
   text-align: center;
   height: 500px;
-  display: flex;
-  flex: wrap;
-  justify-content: space-between;
+  // display: flex;
+  // flex: wrap;
+  // justify-content: space-between;
   background: gray;
   text-align: horizontal;
 }
@@ -151,9 +152,18 @@ input, textarea, select {
 /* back, initially hidden pane */
 .back {
   background-color: #1D1A21;
-  opacity: 0.9;
+  opacity: 0.95;
   transform: rotateY(180deg);
   color: white;
   text-align: center;
+}
+.back h1 {
+  padding-top: 250px;
+}
+.navbar .navbar-fixed-top .navbar-inverse {
+  background-color: #000063;
+}
+.users {
+  padding-top: 10px;
 }
 

@@ -3,8 +3,11 @@ require 'httparty'
 # require 'httplog'
 class StaticPagesController < ApplicationController
   def home
+    if logged_in?
+      @post = current_user.posts.build
+      @feed_items = current_user.feed.paginate(page: params[:page])
+    end
   end
-
   def help
     puts "APIII KEYE #{Igdb.connect(Figaro.env.igdb_api_key)}"
     # Igdb.connect(Figaro.env.igdb_api_key)
@@ -19,7 +22,6 @@ class StaticPagesController < ApplicationController
   puts "RESPONSE 111111 #{response}"
   puts "RESPONSE 111111 #{response.parsed_response}"
   end
-
   def about
   end
 end
