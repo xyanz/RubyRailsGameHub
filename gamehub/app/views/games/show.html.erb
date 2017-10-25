@@ -1,0 +1,15 @@
+<h3><%= @game_response[0]["name"] %></h3>
+<p>Rating: <%= '%.2f' % @game_response[0]["rating"] %></p>
+<p>Release Date: <%= @game_response[0]["release_dates"][0]["human"] %></p>
+<p>Summary <%= @game_response[0]["summary"] %></p>
+
+
+<% @game_response[0]["screenshots"].each do |screenshot| %>
+  <img src="https://<%= screenshot["url"][2..-1] %>" />
+<% end %>
+<img src="https://<%= @game_response[0]["screenshots"][0]["url"][2..-1] %>" />
+<div>
+  <button type="button" class="btn btn-secondary btn-lg">
+    <%= link_to "Back", :back %>
+  </button>
+</div>

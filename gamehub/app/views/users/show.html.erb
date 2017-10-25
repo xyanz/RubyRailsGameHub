@@ -1,5 +1,12 @@
 <% provide(:title, @user.name) %>
-<h1>Show User</h1>
-<%= @user.inspect %><br /><br />
-<p><%= @user.name %></p>
+<h1><%= @user.name %></h1>
 <p><%= @user.email %></p>
+<div class="col-md-8">
+  <% if @user.posts.any? %>
+    <h3>Posts (<%= @user.posts.count %>)</h3>
+    <ol class="posts">
+      <%= render @posts %>
+    </ol>
+    <%= will_paginate @posts %>
+  <% end %>
+</div>

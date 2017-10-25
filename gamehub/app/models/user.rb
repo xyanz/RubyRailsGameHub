@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  # destroy all child elements of user(posts)
+  has_many :posts, dependent: :destroy
   #Convert email to lowercase before DB save
   before_save { self.email = email.downcase }
   validates :name, presence: true, length: { maximum: 50 }
@@ -8,4 +10,7 @@ class User < ApplicationRecord
                     uniqueness: { case_sensetive: false }
   has_secure_password
   validates :password, presence: true, length: {minimum: 6}, allow_nil: true
+  def feed
+    Post.where("user_id = ?", id)
+  end
 end

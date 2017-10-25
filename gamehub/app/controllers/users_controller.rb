@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   end
   def show
     @user = User.find(params[:id])
+    @posts = @user.posts.paginate(page: params[:page])
   end
   def destroy
     User.find(params[:id]).destroy
@@ -44,13 +45,6 @@ class UsersController < ApplicationController
   private
     def user_params
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
-    end
-    def logged_in_user
-      unless logged_in?
-        store_location
-        flash[:danger] = "Log in to continue!"
-        redirect_to login_url
-      end
     end
     # Check to make sure only currently logged in user can edit/update posts
     def correct_user
