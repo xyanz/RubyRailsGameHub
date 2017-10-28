@@ -1,10 +1,11 @@
 <%= form_for(@post) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-    <%= f.text_area :content, placeholder: "New post..." %>
+    <%= f.text_area :content, placeholder: "Make new post" %>
   </div>
   <%= f.submit "Post", class: "btn btn-primary" %>
-  <span class="post-picture">
-    <%= f.file_field :picture %>
+  <span class="picture">
+    <!-- Client side validation for image formats -->
+    <%= f.file_field :picture, accept: 'image/jpeg, image/gif, image/png' %>
   </span>
 <% end %>

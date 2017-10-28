@@ -1,3 +1,5 @@
+# Dynamic title helper for partial
+# Adds base title if no title exists
 module ApplicationHelper
   def full_title(page_title = '')
   base_title = "GAMEHUB APP"
